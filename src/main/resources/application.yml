@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: 48-SpringSecurity-OAuth-APP-28
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/SBMSBulk
+    username: root
+    password: '#Happy123'  # Ensure the password is wrapped in single quotes to avoid special character issues
+    hikari:
+      maximum-pool-size: 20
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  batch:
+    jdbc:
+      initialize-schema: always
